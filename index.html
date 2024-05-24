@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentify</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Registration Form -->
+        <div id="registration">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Phone Number" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Property Listing Form -->
+        <div id="propertyForm">
+            <h2>Post Property</h2>
+            <form id="postPropertyForm">
+                <input type="text" id="place" placeholder="Place" required>
+                <input type="text" id="area" placeholder="Area" required>
+                <input type="number" id="bedrooms" placeholder="Number of Bedrooms" required>
+                <input type="number" id="bathrooms" placeholder="Number of Bathrooms" required>
+                <input type="text" id="nearby" placeholder="Nearby Places (Hospitals, Colleges)" required>
+                <button type="submit">Post Property</button>
+            </form>
+        </div>
+
+        <!-- Property Listings -->
+        <div id="properties">
+            <h2>Properties</h2>
+            <div id="propertyList"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
